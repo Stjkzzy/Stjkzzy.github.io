@@ -1,0 +1,34 @@
+
+<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+{% if page.title == 'Archive' %}
+<!-- jquery.tagcloud.js -->
+<script>
+    async('{{ "" | prepend: site.baseurl }}',function(){
+        $.fn.tagcloud.defaults = {
+            //size: {start: 1, end: 1, unit: 'em'},
+            color: {start: '#bbbbee', end: '#2f93b4'},
+        };
+        $('#tag_cloud a').tagcloud();
+    })
+</script>
+<script src='{{ "/js/archive.js " | prepend: site.baseurl }}'></script>
+{% endif %}
+
+<!--fastClick.js -->
+

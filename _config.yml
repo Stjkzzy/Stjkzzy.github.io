@@ -1,0 +1,79 @@
+title: 我有很多钱！
+SEOTitle: 我有很多钱 | 我有很多钱 Blog
+header-img: img/home-bg.jpg
+future: true
+permalink: pretty
+paginate: 6
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          
+plugins: [jekyll-paginate]
+markdown: kramdown
+kramdown:
+  input: GFM                           
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+sidebar: true                           # whether or not using Sidebar.
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+friends: [
+    {
+      title: "抖音去水印",
+      href: "https://3g.gljlw.com/diy/douyin.php"
+    },{
+      title: "永顺e盘",
+      href: "http://sj.ysupan.com/zjkgf"
+    },{
+        title: "k1314",
+        href: "https://v.kuaishou.com/xgauhm"
+    },{
+        title: "琴妹427774279",
+        href: "https://v.kuaishou.com/z1HiAI"
+    },{
+        title: "抖音号直达",
+        href: "https://v.douyin.com/iN6cL8NQ/"
+    },{
+        title: "广告招商",
+        href: ""
+    },{
+        title: "南方泵业",
+        href: "https://ksirq.github.io/"
+    },{
+        title: "平邑防水",
+        href: "https://rsxj.github.io/"
+    },{
+        title: "GitHub",
+        href: "https://www.github.com/"
+    },{
+        title: "Jy365",
+        href: "https://jy365.github.io/"
+    },{
+        title: "google mail",
+        href: "https://mail.google.com"
+    },{
+        title: "git写博",
+        href: "https://github.com/jy365/jy365.github.io/tree/master/_posts"
+    } ,{
+        title: "梁山立鸿二手设备买卖",
+        href: "https://v.kuaishou.com/zRZMUU"
+    } ,{
+        title: "我的精灵",
+        href: "https://v.kuaishou.com/kAUmBE "
+    },{
+        title: "直达我快手",
+        href: "https://v.kuaishou.com/npctcm"
+    } ,{
+        title: "草料网",
+        href: "https://cli.im/tools"
+    } ,{
+        title: "图片压缩",
+        href: "https://yasuo.xunjiepdf.com/img/"
+    } ,{
+        title: "视频解析",
+        href: "https://youtube.iiilab.com/"
+    } 
+]
+theme: jekyll-theme-cayman
