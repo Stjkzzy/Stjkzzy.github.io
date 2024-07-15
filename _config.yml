@@ -4,7 +4,7 @@ header-img: img/home-bg.jpg
 future: true
 permalink: pretty
 paginate: 6
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+# exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
 anchorjs: true                          
 plugins: [jekyll-paginate]
 markdown: kramdown
