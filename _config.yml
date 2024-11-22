@@ -70,5 +70,9 @@ friends: [
         title: "回首页",
         href: "https://stjkzzy.github.io"
     } 
-]
+]    
+
+
+
+            
 theme: jekyll-theme-cayman
