@@ -33,7 +33,7 @@ friends: [
         title: "Youtube招商",
         href: "https://m.youtube.com/@YsCfzy/shorts"
     },{
-        title: "下载🐶",
+        title: "下载狗",
         href: "https://www.xiazaitool.com"
     },{
         title: "专业防水技术",
@@ -66,10 +66,19 @@ friends: [
     } ,{
         title: "图片压缩",
         href: "https://yasuo.xunjiepdf.com/img/"
-    } ,{
+    } ,    
+        
+            
+                
+                     
+                     {
         title: "回首页",
         href: "https://bcjk.us.kg"
-    } 
+    }     
+
+
+
+                
 ]    
 
 
