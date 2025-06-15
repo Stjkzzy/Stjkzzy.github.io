@@ -1,38 +1,22 @@
-<a onclick="copyTxt('8.10 我在抖极赚好礼，你快来一起赚！为我助力，你可天天领奖励冗坁埪M崰名丢頣 igT:/ q@e.Ox :8am')">点击复制</a>
-<script>
-//原生js实现复制内容到剪切板，兼容pc、移动端（支持Safari浏览器）
-function copyTxt(text){
-	if(typeof document.execCommand!=="function"){
-		alert("复制失败，请长按复制");
-		return;
-	}
-	var dom = document.createElement("textarea");
-	dom.value = text;
-	dom.setAttribute('style', 'display: block;width: 1px;height: 1px;');
-	document.body.appendChild(dom);
-	dom.select();
-	var result = document.execCommand('copy');
-	document.body.removeChild(dom);
-	if (result) {
-		alert("复制成功");
-		return;
-	}
-	if(typeof document.createRange!=="function"){
-		alert("复制失败，请长按复制");
-		return;
-	}
-	var range = document.createRange();
-	var div=document.createElement('div');
-	div.innerHTML=text;
-	div.setAttribute('style', 'height: 1px;fontSize: 1px;overflow: hidden;');
-	document.body.appendChild(div);
-	range.selectNode(div);
-	const selection = window.getSelection();
-	if (selection.rangeCount > 0){
-		selection.removeAllRanges();
-	}
-	selection.addRange(range);
-	document.execCommand('copy');
-	alert("复制成功")
-}
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自动复制代码示例</title>
+</head>
+<body>
+  <textarea id="textToCopy" rows="4" cols="50">8.10 我在抖极赚好礼，你快来一起赚！为我助力，你可天天领奖励冗坁埪M崰名丢頣 igT:/ q@e.Ox :8am</textarea>
+  <br>
+  <button id="copyButton">复制文本</button>
+
+  <script>
+    document.getElementById('copyButton').addEventListener('click', function() {
+      const textArea = document.getElementById('textToCopy');
+      textArea.select();
+      document.execCommand('copy');
+      alert('文本已复制到剪贴板！');
+    });
+  </script>
+</body>
+</html>
