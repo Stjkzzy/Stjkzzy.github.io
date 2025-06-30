@@ -1,0 +1,9 @@
+document.getElementById('copyButton').addEventListener('click', function () {
+  const textToCopy = document.getElementById('textToCopy').innerText;
+
+  navigator.clipboard.writeText(textToCopy).then(() => {
+    alert('文本已成功复制到剪贴板！');
+  }).catch(err => {
+    console.error('复制失败：', err);
+  });
+});
